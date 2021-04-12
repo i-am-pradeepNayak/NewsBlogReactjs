@@ -23,7 +23,7 @@ function Homepage() {
           <h1>A Readers favourite place!</h1>
           <p>
             We provide high quality online resource for reading blogs. Just sign
-            up and start reading some quality blogs.
+            up and start reading news some quality blogs.
           </p>
           <GoogleLogin
             clientId="1034526437358-a2inrk2rfc7nam7pjgtjhs4ouopgek06.apps.googleusercontent.com"
