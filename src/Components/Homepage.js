@@ -6,6 +6,7 @@ import '../styling/home.css';
 import { setSignedIn, setUserData } from '../features/userSlice';
 
 function Homepage() {
+  console.log('Home Page');
   const isSignedIn = useSelector(selectSignedIn);
 
   const dispatch = useDispatch();
@@ -38,7 +39,6 @@ function Homepage() {
             )}
             onSuccess={login}
             onFailure={login}
-            isSignedIn={true}
             cookiePolicy={'single_host_origin'}
           />
         </div>

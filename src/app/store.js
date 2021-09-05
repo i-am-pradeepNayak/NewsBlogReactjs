@@ -6,3 +6,4 @@ export default configureStore({
     user: userReducer
   }
 });
+console.log('store');

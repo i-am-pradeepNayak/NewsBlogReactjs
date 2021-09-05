@@ -6,6 +6,7 @@ import { selectUserInput, setBlogData } from '../features/userSlice';
 import '../styling/blogs.css';
 
 const Blogs = () => {
+  console.log('News Page');
   const searchInput = useSelector(selectUserInput);
   const blog_url = `https://gnews.io/api/v4/search?q=${searchInput}&token=74da443369bd202a1f3146a275d761fc`;
   const dispatch = useDispatch();
@@ -28,7 +29,7 @@ const Blogs = () => {
 
   return (
     <div className="blog__page">
-      <h1 className="blog__page__header">Blogs</h1>
+      <h1 className="blog__page__header">News</h1>
       {loading ? <h1 className="loading">Loading...</h1> : ''}
       <div className="blogs">
         {blogs?.articles?.map(blog => (

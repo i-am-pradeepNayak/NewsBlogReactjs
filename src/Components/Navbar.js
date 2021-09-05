@@ -13,6 +13,7 @@ import {
 import '../styling/navbar.css';
 
 const Navbar = () => {
+  console.log('Navbar Page');
   const [inputValue, setInputValue] = useState('');
   const isSignedIn = useSelector(selectSignedIn);
   const userData = useSelector(selectUserData);
@@ -31,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <h1 className="navbar__header">BlogMania 💬</h1>
+      <h1 className="navbar__header">NewsMania 💬</h1>
       {isSignedIn && (
         <div className="blog__search">
           <input
